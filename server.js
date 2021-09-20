@@ -94,7 +94,7 @@ const transporter = nodemailer.createTransport(
 // RAZORPAY
 const razorpay = new Razorpay({
   key_id: "rzp_test_qhtzb62lr1Zo60",
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
+  key_secret: "khQkLHZ4UQmLqABnqIbn8Q3l",
 });
 
 app.post("/razorpay", async (req, res) => {
