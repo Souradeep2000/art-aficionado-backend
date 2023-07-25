@@ -301,6 +301,7 @@ app.post(
       const legit = forgotPasswordToken(findUser);
 
       res.send({ _id: findUser._id, email: findUser.email });
+
       transporter.sendMail({
         to: findUser.email,
         from: "souradeepgharami2000@gmail.com",
